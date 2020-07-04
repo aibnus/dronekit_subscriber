@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find dronekit_subscribe)/launch/scanner_3d.launch" />
+
+    <node pkg="rviz" name="rviz" type="rviz" args="-d $(find dronekit_subscribe)/rviz/scanner_3d.rviz" />
+</launch>
